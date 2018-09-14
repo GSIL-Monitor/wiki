@@ -4,4 +4,3 @@
 
 HDFS is a distribute file system 
 
-ç¾‰
