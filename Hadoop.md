@@ -2,4 +2,6 @@
 ## HDFS
 
 
-HDFS is a distribute file system
+HDFS is a distribute file system 
+
+ç¾‰
