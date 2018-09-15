@@ -7,10 +7,26 @@
 	package com.fankiwu.basic;
 	
 	public interface Add {
-
+	
 		int add(int a, int b);
-
+	
 	}
+	
+	package com.fankiwu.basic;
+	
+	import java.lang.reflect.InvocationHandler;
+	import java.lang.reflect.Method;
+	
+	public class AddProxy  implements InvocationHandler {
+	
+		@Override
+			public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+				return (int)args[0] + (int)args[1] ;
+	
+			}
+	
+	}
+
 
 - [x] a
 - [x] b
