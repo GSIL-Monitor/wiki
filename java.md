@@ -58,6 +58,6 @@
 	加载当前应用的类库
 
 应用程序启动时先由BootstrapClassLoader加载核心类库，然后再由ExtClassLoader加载括在类库，再由AppClassLoader加载应用类库，BootstrapClassLoader可以理解为ExtClassLoader的父ClassLoader，
-ExtClassLoader可以理解为AppClassLoader的父ClassLoader
+ExtClassLoader是AppClassLoader的父ClassLoader
 
 
