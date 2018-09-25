@@ -1,4 +1,4 @@
-#安装ssh
+# 安装ssh
 yum install openssh-server -y
 ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key
 上传公钥
