@@ -52,3 +52,10 @@ HDFS 采用Master/Slave的架构来存储数据，这种架构主要由四个部
     - 管理数据块（Block）映射信息
     - 配置副本策略
     - 处理客户端读写请求
+- DataNode：就是Slave。NameNode 下达命令，DataNode 执行实际的操作
+    - 存储实际的数据块
+    - 执行数据块的读写操作
+- Secondary NameNode：并非 NameNode 的热备。当NameNode 挂掉的时候，它并不能马上替换 NameNode 并提供服务
+    - 辅助 NameNode，分担其工作量
+    - 定期合并 fsimage和fsedits，并推送给NameNode
+    - 在紧急情况下，可辅助恢复 NameNode
