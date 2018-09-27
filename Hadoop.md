@@ -1,1 +1,1 @@
-<center># Hadoop 笔记<center>
+<div align="center"># Hadoop 笔记</div>
