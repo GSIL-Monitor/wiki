@@ -2,6 +2,7 @@
 ## HDFS
 ### HDFS is a distribute file system 
 ### 特征
+>
 - 高容错
 - 高可靠性
 - 高可扩展性
