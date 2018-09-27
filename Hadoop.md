@@ -42,7 +42,6 @@
 HDFS 采用Master/Slave的架构来存储数据，这种架构主要由四个部分组成，分别为HDFS Client、NameNode、DataNode和Secondary NameNode
 
 - Client：就是客户端
-
     - 文件切分。文件上传 HDFS 的时候，Client 将文件切分成 一个一个的Block，然后进行存储
     - 与 NameNode 交互，获取文件的位置信息。
     - 与 DataNode 交互，读取或者写入数据
