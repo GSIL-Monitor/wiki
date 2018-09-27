@@ -45,5 +45,11 @@ HDFS 采用Master/Slave的架构来存储数据，这种架构主要由四个部
 
     - 文件切分。文件上传 HDFS 的时候，Client 将文件切分成 一个一个的Block，然后进行存储
     - 与 NameNode 交互，获取文件的位置信息。
+    - 与 DataNode 交互，读取或者写入数据
+    - Client 提供一些命令来管理 HDFS，比如启动或者关闭HDFS
+    - Client 可以通过一些命令来访问 HDFS
 - NameNode：就是 master，它是一个主管、管理者
-
+    - 管理 HDFS 的名称空间
+    - 管理数据块（Block）映射信息
+    - 配置副本策略
+    - 处理客户端读写请求
