@@ -14,3 +14,6 @@ make install
 
 # 重新编译清理
 make distclean     重新编译前执行
+
+mv /usr/bin/vi /usr/bin/bi.bak
+ln -s /usr/local/bin/vim /usr/bin/vi
