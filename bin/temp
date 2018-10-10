@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ ! -e "/usr/local/sbin/temp.txt" ] ; then
+echo "touch file"
+touch /usr/local/sbin/temp.txt
+fi
+
+
+if [ ! $1 ] ; then
+echo "less"
+less /usr/local/sbin/temp.txt
+fi
+
+if [ $1 ] ; then
+	if [ "$1" == "cl" ] ; then
+		echo > /usr/local/sbin/temp.txt
+	else
+		echo "to add"
+		echo $1 >> /usr/local/sbin/temp.txt
+	fi
+fi
