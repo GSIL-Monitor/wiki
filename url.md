@@ -8,3 +8,4 @@
 ###### https://oomake.com/download/docker-windows    docker下载地址
 ###### https://mirrors.tuna.tsinghua.edu.cn/apache/kafka/   清华大学Apache镜像
 ###### http://mirrors.ustc.edu.cn/    中科大镜像
+###### https://github.com/francistao/LearningNotes
