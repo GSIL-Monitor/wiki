@@ -1,0 +1,6 @@
+#!/bin/bash
+cd /tmp/dubbo/client/
+mvn clean package
+ps -ef | grep "appName=c1" | grep java | awk '{print $2}' | xargs kill -9
+nohup java -jar /tmp/dubbo/client/target/client-0.0.1-SNAPSHOT.jar --appName=c1  > /tmp/c1.log 2 > /tmp/c1.err.log &
+

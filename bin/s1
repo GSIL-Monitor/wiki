@@ -1,0 +1,8 @@
+
+#!/bin/bash
+cd /tmp/dubbo/service
+mvn clean package
+ps -ef | grep "appName=s1" | grep java | awk '{print $2}' | xargs kill -9
+mkdir -p /tmp/s1
+cp -r /tmp/dubbo/service/target/service-0.0.1-SNAPSHOT.jar /tmp/s1/service-0.0.1-SNAPSHOT.jar
+nohup java -jar /tmp/s1/service-0.0.1-SNAPSHOT.jar --appName=s1  > /tmp/s1.log 2 > /tmp/s1.err.log &

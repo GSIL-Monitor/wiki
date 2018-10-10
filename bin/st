@@ -1,0 +1,5 @@
+
+#!/bin/bash
+ps -ef | grep "appName=c1" | grep java | awk '{print $2}' | xargs kill -9
+ps -ef | grep "appName=s1" | grep java | awk '{print $2}' | xargs kill -9
+ps -ef | grep "appName=s2" | grep java | awk '{print $2}' | xargs kill -9
