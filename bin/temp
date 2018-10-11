@@ -7,8 +7,7 @@ fi
 
 
 if [ ! $1 ] ; then
-echo "less"
-less /usr/local/sbin/temp.txt
+cat /usr/local/sbin/temp.txt
 fi
 
 if [ $1 ] ; then
