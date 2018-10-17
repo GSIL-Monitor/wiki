@@ -2,6 +2,8 @@
 ## word
 - spread vi-展开，传播
 - carp n-鲤鱼，鲤科    vi-挑剔
+- crucian n-鲫鱼
+- bait n-饵料
 ## 词汇分类
 - 类型			缩写			全拼				备注
 - 名词 			n    U/C                noun       			uncountable noun/countable noun   不可数名词/可数名词	
