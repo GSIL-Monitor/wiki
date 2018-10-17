@@ -1,2 +1,3 @@
 #!/bin/bash
 echo $1 >> /usr/share/dict/rb
+echo $1 >> /tmp/wiki/dict
