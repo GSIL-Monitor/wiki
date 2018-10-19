@@ -36,10 +36,37 @@ ORM模块为流行的对象-关系映射API，如JPA、JDO、Hibernate、iBatis�
 
 
 
-###### 容器启动 AbstractApplicationContext refresh
-- prepareRefresh -- 预处理
->	- initPropertySources 初始化一些属性设置
->	- getEnvironment().validateRequiredProperties() 校验属性的合法性
->	- getEnvironment().validateRequiredProperties() 校验属性的合法性
->	- getEnvironment().validateRequiredProperties() 校验属性的合法性
+## 容器启动 AbstractApplicationContext refresh
+- 初始化【prepareRefresh】------【设置属性、子类自定义属性设置、校验属性、初始化早期事情容器earlyApplicationEvents】
+- 获取beanfactory【obtainFreshBeanFactory】------【初始化beanfactory
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
