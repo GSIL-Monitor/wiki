@@ -1,0 +1,47 @@
+企业信息认证  1、审批系统审批返回审批结果 0.5
+借款信息提交审核 1、推送订单信息到审批系统 1
+进件系统对接 1、企业信息推送 2、借款申请推送 3、企业审批结果查询 4、用户借款查询    3
+项目发布 1   接口有修改，@饶先龙提供接口
+短息通知 0.5       
+实际放款金额回填，涉及到后面还款计划使用实际放款金额，，，，，，增加实际放款金额字段。处理历史数据，提供接口跟进件系统查询
+
+
+
+
+
+
+##########################################################################################################
+
+
+
+	/**借款用户(企业)信息推送**/
+	public static final String	USERREGISTER = "/dispatch/starloan/userRegister";
+	/**借款申请订单推送**/
+	public static final String	LOANAPPLY = "/dispatch/starloan/loanApply";
+	/**借款用户审批结果查询**/
+	public static final String	GETCREDITRESULT = "/dispatch/starloan/getCreditResult";
+	/**用户借款结果查询**/
+	public static final String	GETORDERRESULT = "/dispatch/starloan/getOrderResult";
+	
+##########################################################################################################
+
+用户信息推送（姓名取公司名称，身份证取社会统一征信吗）
+	companysn            外部用户号
+	name         		用户名[企业名称]
+	credit_code         身份证
+	mobile              手机号
+	
+	id_number_z_picture      身份证正面
+	id_number_f_picture		身份证反面
+	法人姓名
+	法人身份证
+	
+
+借款申请订单推送
+
+	
+    
+	
+	
+	
+	
