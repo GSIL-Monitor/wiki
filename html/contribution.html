@@ -1,30 +1,20 @@
 <html>
-	<head>
-	</head>
-	<body>
-    <script type="application/javascript">
-
-
-        var a = 1;
-        var a = 1;
-        console.log(a);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<head>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
     </script>
-	</body>
+</head>
+<body>
+<script type="application/javascript">
+    $.ajax(
+        {
+            url: "http://localhost:8080/loandispatch-web/dispatch/starloan/getMongoInfo",
+            success: function (result) {
+                console.log(result);
+            },
+            xhrFields: {withCredentials: true}
+        }
+    );
+
+</script>
+</body>
 </html>
