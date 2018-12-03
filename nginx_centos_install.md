@@ -6,7 +6,7 @@ cd /tmp
 wget https://nginx.org/download/nginx-1.14.1.tar.gz
 tar -zxvf nginx-1.14.1.tar.gz 
  cd nginx-1.14.1
-./configure
+/tmp/nginx-1.14.1/configure
 make
 make install
 whereis nginx
